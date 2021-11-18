@@ -51,7 +51,7 @@ const options = {
     }
     disabledBtn(false);
 
-    refs.btn.addEventListener('click', changeTimer(parseSelectedDate));
+    refs.btn.addEventListener('click', () => changeTimer(parseSelectedDate));
   },
 };
 
