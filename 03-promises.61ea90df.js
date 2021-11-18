@@ -5,4 +5,4 @@ var t,e=arguments[3];!function(e,i){"function"==typeof t&&t.amd?t([],function(){
 },{}],"GyVV":[function(require,module,exports) {
 "use strict";var e=t(require("notiflix"));function t(e){return e&&e.__esModule?e:{default:e}}const o=document.querySelector(".form"),n=o.querySelector('input[name="delay"]'),i=o.querySelector('input[name="step"]'),u=o.querySelector('input[name="amount"]');function l(t){t.preventDefault();for(let o=0;o<u.value;o+=1){r(o+1,+n.value+ +i.value*o).then(({position:t,delay:o})=>{const n=`✅ Fulfilled promise ${t} in ${o}ms`;console.log(n),e.default.Notify.success(n)}).catch(({position:t,delay:o})=>{const n=`❌ Rejected promise ${t} in ${o}ms`;console.log(n),e.default.Notify.failure(n)})}}function r(e,t){return new Promise((o,n)=>{const i=Math.random()>.3;setTimeout(()=>{i?o({position:e,delay:t}):n({position:e,delay:t})},t)})}o.addEventListener("submit",l);
 },{"notiflix":"hWOm"}]},{},["GyVV"], null)
-//# sourceMappingURL=/parcel-project-template/03-promises.61ea90df.js.map
+//# sourceMappingURL=/goit-js-hw-09/03-promises.61ea90df.js.map
